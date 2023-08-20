@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Evcil Hayvan Yönetimi</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Evcil Hayvan Yönetimi</h1>
+        <div class="mb-3">
+            <label for="pet-name" class="form-label">Evcil Hayvan Adı:</label>
+            <input type="text" class="form-control" id="pet-name">
+        </div>
+        <div class="mb-3">
+            <label for="pet-type" class="form-label">Evcil Hayvan Türü:</label>
+            <select class="form-select" id="pet-type">
+                <option>Köpek</option>
+                <option>Kedi</option>
+                <option>Kuş</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="pet-age" class="form-label">Evcil Hayvan Yaşı:</label>
+            <input type="number" class="form-control" id="pet-age">
+        </div>
+        <div class="mb-3">
+            <label for="pet-gender" class="form-label">Evcil Hayvan Cinsiyeti:</label>
+            <select class="form-select" id="pet-gender">
+                <option>Erkek</option>
+                <option>Dişi</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="pet-color" class="form-label">Evcil Hayvan Rengi:</label>
+            <input type="text" class="form-control" id="pet-color">
+        </div>
+        <button type="button" class="btn btn-primary" id="create-pet-btn">Evcil Hayvan Oluştur</button>
+        <h2 class="mt-4">Evcil Hayvan Listesi</h2>
+        <ul class="list-group" id="pet-list">
+            <!-- Evcil hayvanlar burada listelenecek -->
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
